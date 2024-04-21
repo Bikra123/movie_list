@@ -1,3 +1,26 @@
 <resources>
     <string name="app_name">My Application</string>
+
+    <string name="movie_name">Movie List</string>
+    <string name="movie_des">Deskripsi</string>
+
+    <string-array name="movie_name_list">
+        <item>Avatar: The Legend of Aang (2005)</item>
+        <item>Ancika: Dia yang bersamaku 1995 (2024)</item>
+        <item>Avatar (2009)</item>
+        <item>Avenger: EndGame (2019)</item>
+        <item>Dr.Strange (2016)</item>
+        <item>KKN di Desa Penari (2022)</item>
+        <item>Kung Fu Panda (2008)</item>
+        <item>Kimetsu No Yaiba The Movie : Mugen Train (2020)</item>
+        <item>Spider-Man : No Way Home (2021)</item>
+        <item>One Piece (1999)</item>
+    </string-array>
+
+    <string-array name="movie_name_description">
+        <item>"Avatar: The Last Airbender" memulai ceritanya di dunia yang terpecah menjadi empat bangsa elemen. Ketika bangsa Api menyerang, seorang anak bernama Aang, yang juga Avatar terakhir, terperangkap dalam gletser selama seratus tahun. Kekacauan merajalela di dunia saat dia terbangun, menuntut pemulihan keseimbangan yang terganggu. Bersama sahabatnya, Katara dan Sokka, Aang memulai perjalanan untuk menguasai elemen yang tersisa: air, bumi, dan api. Namun, dihadapkan pada kejaran Pangeran Zuko, yang bertekad menangkapnya. Perjalanan mereka penuh dengan tantangan dan pertarungan, sementara Aang harus menerima tanggung jawabnya sebagai penguasa elemen dan harapan terakhir bagi perdamaian dunia yang terancam.</item>
+        <item>Dikisahkan tentang persahabatan dan jalin hubungan antara Dilan dan Ancika Mehrunisa Rabu. Hubungan mereka yang semakin erat membuat benih-benih cinta tumbuh dan hubungan mereka pun menanjak hingga ke jenjang kekasih. Di tahun 1995, Dilan si mantan panglima geng motor jatuh cinta pada Ancika, perempuan yang sangat membenci geng motor. Sudah begitu, Ancika juga tidak suka berpacaran, dan jelas, tidak suka Dilan. Jadilah Dilan harus mencari cara untuk menaklukan perempuan yang jauh berbeda dengan Milea, si mantan. Selisih usia dan lingkungan membuat usaha Dilan berlipat ganda, apalagi di balik sikap dewasa yang nggak sesuai usianya, Ancika itu cemburuan. Makin berat perjuangan Dilan.</item>
+        <item>"Avatar: The Way of Water" melanjutkan petualangan di dunia Pandora, di mana manusia dan Na'vi hidup berdampingan. Kisah ini berpusat pada petualangan Jake Sully dan Neytiri, yang sekarang telah menjadi pemimpin suku. Mereka menemukan dunia bawah air yang spektakuler dan bertemu dengan suku baru yang berbeda, serta menghadapi ancaman dari pihak manusia yang ingin menjarah sumber daya alam Pandora. Di tengah konflik ini, Jake dan Neytiri harus memimpin suku-suku Pandora untuk melindungi rumah mereka dan menjaga keseimbangan alam. Dengan latar belakang visual yang memukau dan cerita yang mendebarkan, film ini mengajak penonton untuk menjelajahi keajaiban dunia baru yang penuh dengan misteri dan bahaya.</item>
+
+    </string-array>
 </resources>
