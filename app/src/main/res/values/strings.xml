@@ -30,4 +30,18 @@
         <item>Luffy, seorang bajak laut muda yang bercita-cita menjadi Raja Bajak Laut dan menemukan harta karun legendaris yang dikenal sebagai One Piece. Bersama kru bajak lautnya yang beragam, Luffy berlayar melintasi Grand Line, menghadapi tantangan yang tak terhitung jumlahnya, dan bertemu dengan berbagai karakter unik dan kuat di sepanjang perjalanan. Namun, di balik keceriaan dan kekonyolan mereka, ada juga misteri yang mengelilingi masa lalu Luffy, kekuatan misterius Devil Fruit, dan rahasia-rahasia gelap yang tersembunyi di balik dunia bajak laut. Dengan setiap petualangan baru, Luffy dan kru Straw Hat bergerak maju dalam pencarian mereka untuk menemukan One Piece, sambil menantang kekuatan besar dan melawan musuh yang kuat. Dengan alam semesta yang luas dan karakter yang kompleks, "One Piece" terus memikat para penggemar dengan cerita epiknya yang penuh dengan keajaiban, pertarungan, dan persahabatan yang kuat.</item>
 
     </string-array>
+
+    <integer-array name="movie_photo">
+        <item>@drawable/aang</item>
+        <item>@drawable/ancika</item>
+        <item>@drawable/avatar</item>
+        <item>@drawable/avenger</item>
+        <item>@drawable/drstrange</item>
+        <item>@drawable/kkn</item>
+        <item>@drawable/kungfupanda</item>
+        <item>@drawable/mugentrain</item>
+        <item>@drawable/nowayhome</item>
+        <item>@drawable/onepiece</item>
+
+    </integer-array>
 </resources>
