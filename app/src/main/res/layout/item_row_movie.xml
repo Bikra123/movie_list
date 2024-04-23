@@ -11,7 +11,7 @@
     android:layout_marginTop="4dp"
     android:layout_marginEnd="8dp"
     android:layout_marginBottom="4dp"
-    card_view:cardCornerRadius="9999dp">
+    card_view:cardCornerRadius="10dp">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -52,12 +52,13 @@
             android:layout_marginStart="8dp"
             android:layout_marginEnd="8dp"
             android:textSize="12sp"
+            android:maxLines="2"
+            android:ellipsize="end"
             card_view:layout_constraintTop_toBottomOf="@+id/tv_card"
             card_view:layout_constraintStart_toEndOf="@+id/iv_card"
             card_view:layout_constraintEnd_toEndOf="parent"
             card_view:layout_constraintBottom_toBottomOf="parent"
             tools:text="@string/movie_des"
-
             />
 
     </androidx.constraintlayout.widget.ConstraintLayout>

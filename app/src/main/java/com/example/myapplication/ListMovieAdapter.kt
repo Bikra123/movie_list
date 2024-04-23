@@ -4,6 +4,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
+import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 import de.hdodenhof.circleimageview.CircleImageView
 
@@ -26,5 +27,8 @@ class ListMovieAdapter(private val listMovies:ArrayList<Movies>): RecyclerView.A
         holder.imgPhoto.setImageResource(photo)
         holder.tvName.text = name
         holder.tvDesc.text = description
+        holder.itemView.setOnClickListener{
+            Toast.makeText(holder.itemView.context,"Kamu memilih " + listMovies[holder.adapterPosition].name,Toast.LENGTH_SHORT).show()
+        }
     }
 }

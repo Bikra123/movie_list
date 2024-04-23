@@ -3,6 +3,8 @@
 
     <string name="movie_name">Movie List</string>
     <string name="movie_des">Deskripsi</string>
+    <string name="list">list</string>
+    <string name="grid">grid</string>
 
     <string-array name="movie_name_list">
         <item>Avatar: The Legend of Aang (2005)</item>
