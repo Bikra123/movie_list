@@ -4,7 +4,10 @@ package com.example.myapplication
 import android.annotation.SuppressLint
 import android.os.Bundle
 import android.view.Menu
+import android.view.MenuItem
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 
@@ -41,10 +44,32 @@ class MainActivity : AppCompatActivity() {
         val listMovieAdapter = ListMovieAdapter(list)
         rvMovies.adapter = listMovieAdapter
 
+        listMovieAdapter.setItemClickCallback(object :ListMovieAdapter.OnItemClickCallback{
+            override fun onItemClicked(data: Movies) {
+                showSelectedMovies(data)
+            }
+        })
     }
 
+    private fun showSelectedMovies(movies: Movies){
+        Toast.makeText(this,"Kamu memilih " + movies.name, Toast.LENGTH_SHORT).show()
+    }
+
+
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        menuInflater.inflate(R.menu.menu_main, menu)
         return super.onCreateOptionsMenu(menu)
+    }
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        when(item.itemId){
+            R.id.action_grid -> {
+                rvMovies.layoutManager = GridLayoutManager(this,2)
+            }
+            R.id.action_list ->{
+                rvMovies.layoutManager = LinearLayoutManager(this)
+            }
+        }
+        return super.onOptionsItemSelected(item)
     }
 
 }

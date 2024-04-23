@@ -5,10 +5,20 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import android.widget.Toast
+import androidx.recyclerview.widget.AdapterListUpdateCallback
 import androidx.recyclerview.widget.RecyclerView
 import de.hdodenhof.circleimageview.CircleImageView
 
 class ListMovieAdapter(private val listMovies:ArrayList<Movies>): RecyclerView.Adapter<ListMovieAdapter.ListViewHolder>() {
+
+
+    private lateinit var onItemClickCallback: OnItemClickCallback
+    interface OnItemClickCallback{
+        fun onItemClicked(data: Movies)
+    }
+    fun setItemClickCallback(onItemClickCallback: OnItemClickCallback){
+        this.onItemClickCallback = onItemClickCallback
+    }
     class ListViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         val imgPhoto: CircleImageView = itemView.findViewById(R.id.iv_card)
         val tvName: TextView = itemView.findViewById(R.id.tv_card)
@@ -27,8 +37,6 @@ class ListMovieAdapter(private val listMovies:ArrayList<Movies>): RecyclerView.A
         holder.imgPhoto.setImageResource(photo)
         holder.tvName.text = name
         holder.tvDesc.text = description
-        holder.itemView.setOnClickListener{
-            Toast.makeText(holder.itemView.context,"Kamu memilih " + listMovies[holder.adapterPosition].name,Toast.LENGTH_SHORT).show()
-        }
+        holder.itemView.setOnClickListener{onItemClickCallback.onItemClicked(listMovies[holder.adapterPosition])}
     }
 }
